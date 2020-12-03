@@ -20,6 +20,7 @@ valid_password(Password) :-
     string_concat(Character, ':', Ch),
     string_codes(Pass, Passchars),
     string_codes(Character, [Code]),
+
     count_ch(Passchars, Code, N),
     N >= Min,
     N =< Max.
